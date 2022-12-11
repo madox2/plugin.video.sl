@@ -251,7 +251,7 @@ class Skylink:
            
         mpd_headers = {'Origin': self._url, 'Referer': self._url, 'User-Agent': UA}
         str_mpd_headers = self._headers_str(mpd_headers)
-        drm_la_headers = {'Origin': self._url, 'Referer': self._url, 'Content-Type': 'application/octet-stream',
+        drm_la_headers = {'Origin': self._url, 'Referer': self._url, 'Content-Type': '',
                           'User-Agent': UA}
         return {
             'protocol': 'mpd',
@@ -346,7 +346,7 @@ class Skylink:
         mpd_headers = {'Origin': self._url, 'Referer': self._url, 'User-Agent': UA, 
                        'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin'}
         str_mpd_headers = self._headers_str(mpd_headers)
-        drm_la_headers = {'Origin': self._url, 'Referer': self._url, 'Content-Type': 'application/octet-stream',
+        drm_la_headers = {'Origin': self._url, 'Referer': self._url, 'Content-Type': '',
                           'User-Agent': UA, 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin'}
 
         return {
@@ -411,7 +411,7 @@ class Skylink:
         mpd_headers = {'Origin': self._url, 'Referer': self._url, 'User-Agent': UA, 
                        'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin'}
         str_mpd_headers = self._headers_str(mpd_headers)
-        drm_la_headers = {'Origin': self._url, 'Referer': self._url, 'Content-Type': 'application/octet-stream',
+        drm_la_headers = {'Origin': self._url, 'Referer': self._url, 'Content-Type': '',
                           'User-Agent': UA, 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-origin'}
         return {
             'protocol': 'mpd',
